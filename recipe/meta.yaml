@@ -1,4 +1,4 @@
-{% set version = '0.8.1' %}
+{% set version = "0.9.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/iml_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/iml/iml_{{ version }}.tar.gz
-  sha256: 24fd0fa9a7a940beaea46c7fcd5c6aad50ddc0dfe4d36aa0dbeb3b7ec67ce7b3
+  sha256: 004ba60c6b15afea24d744d55ece399485c89ea8f30218b2a611cf8007493b97
 
 build:
   merge_build_host: True  # [win]
-  number: 1000
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -33,6 +33,7 @@ requirements:
     - r-foreach
     - r-ggplot2
     - r-glmnet
+    - r-gridextra
     - r-partykit
     - r-prediction
     - r-yaimpute
@@ -46,6 +47,7 @@ requirements:
     - r-foreach
     - r-ggplot2
     - r-glmnet
+    - r-gridextra
     - r-partykit
     - r-prediction
     - r-yaimpute
