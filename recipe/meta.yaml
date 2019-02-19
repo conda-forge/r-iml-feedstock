@@ -33,6 +33,7 @@ requirements:
     - r-foreach
     - r-ggplot2
     - r-glmnet
+    - r-gridextra
     - r-partykit
     - r-prediction
     - r-yaimpute
@@ -46,6 +47,7 @@ requirements:
     - r-foreach
     - r-ggplot2
     - r-glmnet
+    - r-gridextra
     - r-partykit
     - r-prediction
     - r-yaimpute
