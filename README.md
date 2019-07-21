@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About r-iml
 ===========
 
@@ -18,8 +14,15 @@ Summary: Interpretability methods to analyze the behavior and predictions of any
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-iml-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-iml-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5426&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-iml-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
