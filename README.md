@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Interpretability methods to analyze the behavior and predictions of any machine learning model. Implemented methods are: Feature importance described by Fisher et al. (2018) <arXiv:1801.01489>, accumulated local effects plots described by Apley (2018) <arXiv:1612.08468>, partial dependence plots described by Friedman (2001) <http://www.jstor.org/stable/2699986>, individual conditional expectation (ice) plots described by Goldstein et al. (2013) <doi:10.1080/10618600.2014.907095>, local models (variant of lime) described by Ribeiro et. al (2016) <arXiv:1602.04938>, the Shapley Value described by Strumbelj et. al (2014) <doi:10.1007/s10115-013-0679-x>,  feature interactions described by Friedman et. al <doi:10.1214/07-AOAS148> and tree surrogate models.
+Summary: Interpretability methods to analyze the behavior and predictions of any machine learning model.  Implemented methods are: Feature importance described by Fisher et al. (2018) <arXiv:1801.01489>, accumulated local effects plots described by Apley (2018) <arXiv:1612.08468>, partial dependence plots described by Friedman (2001) <http://www.jstor.org/stable/2699986>, individual conditional expectation ('ice') plots described by Goldstein et al. (2013) <doi:10.1080/10618600.2014.907095>, local models (variant of 'lime') described by Ribeiro et. al (2016) <arXiv:1602.04938>, the Shapley Value described by Strumbelj et. al (2014) <doi:10.1007/s10115-013-0679-x>, feature interactions described by Friedman et. al <doi:10.1214/07-AOAS148> and tree surrogate models.
 
 
 
@@ -67,7 +67,7 @@ A feedstock is made up of a conda recipe (the instructions on what and how to bu
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
+and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
 packages to the [conda-forge](https://anaconda.org/conda-forge)
 [Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
