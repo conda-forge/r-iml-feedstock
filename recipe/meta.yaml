@@ -1,4 +1,4 @@
-{% set version = '0.10.0' %}
+{% set version = "0.10.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/iml_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/iml/iml_{{ version }}.tar.gz
-  sha256: a783a8d18006987ed989a3bbd15c5b10aa0a5c0305bc47234a07438505c1a376
+  sha256: f90c4c5d9c8bed831952776cd8efde3c9c1016a7191f6e8738f24fbc21eee6f3
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -33,7 +33,7 @@ requirements:
     - r-future
     - r-future.apply
     - r-ggplot2
-    - r-gridextra
+    - r-keras >=2.2.5.0
     - r-prediction
   run:
     - r-base
@@ -45,7 +45,7 @@ requirements:
     - r-future
     - r-future.apply
     - r-ggplot2
-    - r-gridextra
+    - r-keras >=2.2.5.0
     - r-prediction
 
 test:
@@ -56,18 +56,12 @@ test:
 about:
   home: https://github.com/christophM/iml
   license: MIT
-  summary: 'Interpretability methods to analyze the behavior and predictions of any machine learning
-    model.  Implemented methods are: Feature importance described by Fisher et al. (2018)
-    <arXiv:1801.01489>, accumulated local effects plots described by Apley (2018) <arXiv:1612.08468>,
-    partial dependence plots described by Friedman (2001) <http://www.jstor.org/stable/2699986>,
-    individual conditional expectation (''ice'') plots described by Goldstein et al.
-    (2013) <doi:10.1080/10618600.2014.907095>, local models (variant of ''lime'') described
-    by Ribeiro et. al (2016) <arXiv:1602.04938>, the Shapley Value described by Strumbelj
-    et. al (2014) <doi:10.1007/s10115-013-0679-x>, feature interactions described by
-    Friedman et. al <doi:10.1214/07-AOAS148> and tree surrogate models.'
+  summary: "Interpretability methods to analyze the behavior and predictions of any machine learning model.  Implemented methods are: Feature importance described by Fisher et al. (2018) <arXiv:1801.01489>, accumulated local effects plots described by Apley (2018) <arXiv:1612.08468>, partial dependence plots described by\
+    \ Friedman (2001) <http://www.jstor.org/stable/2699986>, individual conditional expectation ('ice') plots described by Goldstein et al. (2013) <doi:10.1080/10618600.2014.907095>, local models (variant of 'lime') described by Ribeiro et. al (2016) <arXiv:1602.04938>, the Shapley Value described by Strumbelj et. al (2014)\
+    \ <doi:10.1007/s10115-013-0679-x>, feature interactions described by Friedman et. al <doi:10.1214/07-AOAS148> and tree surrogate models."
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
