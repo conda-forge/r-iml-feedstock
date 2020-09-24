@@ -33,7 +33,7 @@ requirements:
     - r-future
     - r-future.apply
     - r-ggplot2
-    - r-gridextra
+    - r-keras >=2.2.5.0
     - r-prediction
   run:
     - r-base
@@ -45,7 +45,7 @@ requirements:
     - r-future
     - r-future.apply
     - r-ggplot2
-    - r-gridextra
+    - r-keras >=2.2.5.0
     - r-prediction
 
 test:
