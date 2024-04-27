@@ -1,4 +1,4 @@
-{% set version = "0.11.2" %}
+{% set version = "0.11.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/iml_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/iml/iml_{{ version }}.tar.gz
-  sha256: 6064c1bd44690ad2989eaa60037b6fb166747e0024662816953b465024035bea
+  sha256: 4b101422b0e757e45956ab6a266ac6b0b6413c009261ef7db4875fec572017b4
 
 build:
   merge_build_host: true  # [win]
